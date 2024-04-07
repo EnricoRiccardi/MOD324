@@ -1,0 +1,8 @@
+TITLE: Advanced Python programming with subsurface applications
+AUTHOR: Enrico Riccardi, University of Stavanger
+DATE: today
+
+FIGURE: [../figures/logo, width=100 frac=0.2]
+
+
+# #include "../modules/part-1.3.git.do.txt"
