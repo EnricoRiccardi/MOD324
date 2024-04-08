@@ -1,4 +1,5 @@
 Sequence
+--------
 
 
 
@@ -10,4 +11,9 @@ ChatGPT
 
 Git
 
+code_back_bone
+
+VSGEO
+
+npd_data
 
