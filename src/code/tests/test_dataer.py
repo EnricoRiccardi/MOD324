@@ -1,3 +1,4 @@
+import os
 import sys
 sys.path.append('..')
 
@@ -12,7 +13,8 @@ class MyDataTest(unittest.TestCase):
 
     def test_datar_load_well(self):
         dataclass = DataGenerator()
-        dataclass.load_well(data_file='../xeek_train_subset_mini.csv')
+        path = os.path.abspath('.')
+        dataclass.load_well(data_file=os.path.join(path, 'xeek_train_subset_mini.csv'))
         print(dataclass.df['DEPTH_MD'].iloc[1])
         self.assertTrue(dataclass.df['DEPTH_MD'].iloc[1] == 439.56778984)
 
