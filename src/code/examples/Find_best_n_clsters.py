@@ -1,3 +1,6 @@
+import sys
+sys.path.append('..')
+
 from src.dater import DataGenerator
 from src.modeller import ModelGenerator
 

@@ -1,3 +1,6 @@
+import sys
+sys.path.append('..')
+
 from src.dater import DataGenerator 
 
 dater = DataGenerator()

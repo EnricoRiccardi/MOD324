@@ -1,3 +1,6 @@
+import sys
+sys.path.append('..')
+
 import unittest
 from src.dater import DataGenerator
 
