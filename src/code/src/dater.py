@@ -31,6 +31,7 @@ class DataGenerator:
         plt.xlabel(x_lab)
         plt.ylabel(y_lab)
         plt.legend()
+        plt.show()
 
     def get_data(self):
         return self.df
