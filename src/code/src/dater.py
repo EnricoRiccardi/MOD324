@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -9,8 +10,11 @@ class DataGenerator:
         self.description = description
         self.df = None
 
-    def load_well(self, data_file="../xeek_train_subset_mini.csv", well_name="16/10-1"):
+    def load_well(self, data_file="None", well_name="16/10-1"):
         """Read a dataset."""
+        if data_file is None:
+            path = os.path.abspath('../src')
+            data_file = os.path.join(path, 'xeek_train_subset_mini.csv')
         self.df = pd.read_csv(data_file)
         self.df = self.df[self.df["WELL"] == well_name]  # select data only for the specific well
 
