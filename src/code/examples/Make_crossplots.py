@@ -3,9 +3,9 @@ import os
 
 sys.path.append('../')
 
-from src.dater import DataGenerator
-from src.modeller import ModelGenerator
-from src.plotter import PlotterGenerator
+from myfirstcode.dater import DataGenerator
+from myfirstcode.modeller import ModelGenerator
+from myfirstcode.plotter import PlotterGenerator
 
 dater = DataGenerator()
 dater.load_well()

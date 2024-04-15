@@ -3,7 +3,7 @@ import os
 
 sys.path.append('../')
 
-from src.dater import DataGenerator 
+from myfirstcode.dater import DataGenerator 
 
 dater = DataGenerator()
 dater.load_well()

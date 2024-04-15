@@ -4,7 +4,7 @@ import os
 
 sys.path.append('../')
 
-from src.dater import DataGenerator
+from myfirstcode.dater import DataGenerator
 
 
 class MyDataTest(unittest.TestCase):
