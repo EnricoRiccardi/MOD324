@@ -1,5 +1,7 @@
 import sys
-sys.path.append('..')
+import os
+
+sys.path.append('../')
 
 from src.dater import DataGenerator
 from src.modeller import ModelGenerator
