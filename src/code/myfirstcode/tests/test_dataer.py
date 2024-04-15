@@ -18,7 +18,7 @@ class MyDataTest(unittest.TestCase):
         if os.path.exists('tests'):
             path = os.path.abspath('tests')
         filename = 'xeek_train_subset_mini.csv'
-        dataclass.load_well(data_file=os.path.join(path, filename))
+        dataclass.load_well(data_file=os.path.join(path, '..',  filename))
         print(dataclass.df['DEPTH_MD'].iloc[1])
         self.assertTrue(dataclass.df['DEPTH_MD'].iloc[1] == 439.56778984)
 
